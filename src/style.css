@@ -1,0 +1,131 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  background-color: var(--Almost-White);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+.header {
+  height: 10vh;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-close {
+  display: none;
+}
+
+.buttons-menu {
+  background-color: var(--Almost-White);
+  border: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+.user-buttons {
+  display: none;
+}
+
+/* Main */
+
+.img-hero {
+  height: 40vh;
+  background-image: url(../images/image-hero-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  height: 80vh;
+}
+
+.main-button {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 15px;
+  color: var(--Almost-White);
+  background-color: var(--Almost-Black);
+}
+
+.main-text {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-text h1 {
+  font-weight: 700;
+}
+
+.main-text p {
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--Medium-Gray);
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* Footer */
+
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer img {
+  max-width: 15%;
+}
