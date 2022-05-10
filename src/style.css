@@ -49,14 +49,6 @@ img {
 
 /* Utilidades */
 
-.background-grey {
-  background-color: var(--Medium-Gray);
-}
-
-.background-white {
-  background-color: var(--Almost-White);
-}
-
 .hide {
   display: none;
 }
@@ -69,15 +61,15 @@ img {
 
 .header {
   height: 10vh;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* .button-close {
-  display: none;
-} */
+.arrows {
+  cursor: pointer;
+}
 
 .button-login-register {
   background-color: var(--Almost-White);
@@ -86,6 +78,7 @@ img {
   width: 80%;
   padding: 0.5rem;
   margin: auto;
+  cursor: pointer;
 }
 
 .buttons-menu {
@@ -102,10 +95,12 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   align-self: end;
+  cursor: pointer;
 }
 
 .buttons-menu-open {
   background-image: url(../images/icon-menu.svg);
+  cursor: pointer;
 }
 
 .logo {
@@ -120,7 +115,7 @@ img {
   background-color: var(--Almost-White);
   width: 63vw;
   height: 100vh;
-  transition: all 1s;
+  transition: all 0.5s;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -162,10 +157,20 @@ img {
   background-color: var(--Almost-White);
   width: 63vw;
   height: 100vh;
-  transition: all 1s;
+  transition: all 0.5s;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.menu-open-background {
+  position: absolute;
+  top: 0;
+  right: 63vw;
+  width: 37vw;
+  height: 100vh;
+  transition: all 0.5s;
+  background-color: hsl(0deg 0% 5% / 80%);
 }
 
 /* .user-buttons {
@@ -192,6 +197,7 @@ img {
   border-radius: 15px;
   color: var(--Almost-White);
   background-color: var(--Almost-Black);
+  cursor: pointer;
 }
 
 .main-text {
@@ -225,4 +231,29 @@ img {
 
 .footer img {
   max-width: 15%;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 768px) {
+  .buttons-menu {
+    display: none;
+  }
+
+  .header {
+  }
+
+  .menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-desktop {
+    position: static;
+    height: auto;
+    width: 100%;
+    padding: 0rem 1rem;
+    flex-direction: row;
+  }
 }
