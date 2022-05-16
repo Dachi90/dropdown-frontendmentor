@@ -236,17 +236,42 @@ img {
 /* Desktop */
 
 @media only screen and (min-width: 768px) {
+  /* Header */
   .buttons-menu {
     display: none;
   }
 
+  .button-login-register {
+    width: auto;
+    color: var(--Medium-Gray);
+  }
+  .button-login-register:hover {
+    color: var(--Almost-Black);
+  }
+
   .header {
+    height: auto;
+  }
+
+  .margin-left {
+    margin-left: auto;
+  }
+
+  .menu-details {
+    gap: 0;
   }
 
   .menu-list {
     width: 100%;
+    padding: 0;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-list li:hover {
+    color: var(--Almost-Black);
+    cursor: pointer;
   }
 
   .nav-desktop {
@@ -255,5 +280,21 @@ img {
     width: 100%;
     padding: 0rem 1rem;
     flex-direction: row;
+  }
+
+  /* Main */
+  .img-hero {
+    height: 100%;
+    width: 40%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main-text {
+    height: 100%;
+    width: 60%;
   }
 }

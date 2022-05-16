@@ -3,7 +3,8 @@ const d = document,
   $ButtonsClose = d.querySelector(".buttons-menu-close"),
   $Nav = d.querySelector("#nav"),
   $BackgroundGray = d.querySelector("#background-gray"),
-  $MenuList = d.querySelector(".menu-list");
+  $MenuList = d.querySelector(".menu-list"),
+  $ImgHero = d.getElementById("img-hero");
 
 $ButtonsOpen.addEventListener("click", (e) => {
   if (e.target.classList.contains("buttons-menu-open")) {
@@ -44,3 +45,19 @@ $MenuList.addEventListener("click", (e) => {
     $Nav.classList.remove("nav-desktop");
   }
 }); */
+
+window.addEventListener("resize", () => {
+  if (width >= 768) {
+    $ImgHero.src = "../images/image-hero-desktop.png";
+  } else {
+    $ImgHero.src = "../images/image-hero-mobile.png";
+  }
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (width >= 768) {
+    $ImgHero.src = "../images/image-hero-desktop.png";
+  } else {
+    $ImgHero.src = "../images/image-hero-mobile.png";
+  }
+});
