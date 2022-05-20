@@ -295,6 +295,18 @@ img {
 
   .main-text {
     height: 100%;
-    width: 60%;
+    width: auto;
+    margin: auto;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main-text h1 span::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .main-text p {
+    text-align: start;
   }
 }

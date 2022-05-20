@@ -6,6 +6,8 @@ const d = document,
   $MenuList = d.querySelector(".menu-list"),
   $ImgHero = d.getElementById("img-hero");
 
+let width = window.visualViewport.width;
+
 $ButtonsOpen.addEventListener("click", (e) => {
   if (e.target.classList.contains("buttons-menu-open")) {
     $Nav.classList.remove("menu-close");
@@ -47,6 +49,7 @@ $MenuList.addEventListener("click", (e) => {
 }); */
 
 window.addEventListener("resize", () => {
+  width = window.visualViewport.width;
   if (width >= 768) {
     $ImgHero.src = "../images/image-hero-desktop.png";
   } else {
