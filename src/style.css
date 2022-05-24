@@ -72,8 +72,10 @@ img {
 }
 
 .button-login-register {
+  font-weight: 700;
+  color: var(--Medium-Gray);
   background-color: var(--Almost-White);
-  border: 1px solid black;
+  border: 2px solid var(--Medium-Gray);
   border-radius: 10px;
   width: 80%;
   padding: 0.5rem;
@@ -247,14 +249,11 @@ img {
 
   .button-login-register {
     width: auto;
-    color: var(--Medium-Gray);
+    padding: 0.5rem 1rem;
   }
   .button-login-register:hover {
     color: var(--Almost-Black);
-  }
-
-  .header {
-    height: auto;
+    border-color: var(--Almost-Black);
   }
 
   .margin-left {
@@ -320,15 +319,22 @@ img {
   .main {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
 
+  .main-button:hover {
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 1px solid;
+    border-color: var(--Almost-Black);
+  }
+
   .main-text {
-    height: 100%;
+    height: 80%;
     width: auto;
     font-size: 2rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 1.5rem;
   }
